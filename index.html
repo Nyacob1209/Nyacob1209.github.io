@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    #box {
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Web App</h1>
+
+  <div id="box">
+    <p id="message">ボタンを押すとメッセージが変わります。</p>
+    <button onclick="changeMessage()">変更する</button>
+  </div>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText = "JavaScriptが動作しました！";
+    }
+  </script>
+</body>
+</html>
