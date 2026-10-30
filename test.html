@@ -11,7 +11,12 @@
   <p>これはtest.htmlのファイルです。<br></p>
   <a href="index.html">戻る</a>
   <script>
-    alert("これはテストです！！");
+    let name = prompt("お名前を入力してください");
+    if (name) {
+      alert("お名前：" + name);
+    } else {
+      alert("お名前が入力されませんでした");
+    }
   </script>
 </body>
 </html>
