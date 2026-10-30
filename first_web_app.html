@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>first_web_app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/my.css">
+</head>
+
+<body>
+
+  <div id="box">
+    <p id="message">ボタンを押すとメッセージが変わります。</p>
+    <button onclick="changeMessage()">変更する</button>
+  </div>
+  <a href="index.html">Home</a>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText = "JavaScriptが動作しました！";
+    }
+  </script>
+</body>
+</html>
