@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+<head>
+  <meta charset=“UTF-8”>
+  <!-- ここでタイトルやスタイルを指定 -->
+  <title>ask_name.html</title>
+</head>
+<body>
+  <!-- ここに本文を記入 -->
+  <h1>Hello</h1>
+  <p>This is ask_name.html<br></p>
+  <a href="index.html">go back</a>
+  <script>
+    let name = prompt("Input name");
+    if (name) {
+      alert("name: " + name);
+    } else {
+      alert("You didn't input name");
+    }
+    let isok = confirm("Do you want japanese view?");
+    if (isok) { alert("you chose yes");
+    document.write("<h1>ごめんね、日本語表示には未対応です😢</h1>");
+    }
+    else { alert("you chose no"); }
+    console.log("name:",name,"isok:",isok);
+  </script>
+</body>
+</html>
